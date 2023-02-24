@@ -6,8 +6,8 @@ export default function Main() {
   return (
     <main className="content">
       <Routes>
-        <Route path="/" element={<Answers />} />
-        <Route path="/game" element={<Game />} />
+        <Route path="/lestatest/" element={<Answers />} />
+        <Route path="/lestatest/game" element={<Game />} />
       </Routes>
     </main>
   );

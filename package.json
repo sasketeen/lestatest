@@ -1,5 +1,6 @@
 {
   "name": "lestatest",
+  "homepage": "https://sasketeen.github.io/lestatest/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +16,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "craco test",
     "eject": "craco eject"
   },
@@ -37,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "@craco/craco": "^7.0.0"
+    "@craco/craco": "^7.0.0",
+    "gh-pages": "^5.0.0"
   }
 }
