@@ -11,7 +11,7 @@ export default function Header() {
       />
       <nav className="header__navigation">
         <NavLink
-          to="/lestatest"
+          to="lestatest/"
           className={({ isActive }) =>
             isActive
               ? "link header__navlink header__navlink_active"
@@ -21,7 +21,7 @@ export default function Header() {
           Ответы
         </NavLink>
         <NavLink
-          to="/lestatest/game"
+          to="lestatest/game"
           className={({ isActive }) =>
             isActive
               ? "link header__navlink header__navlink_active"
