@@ -25,7 +25,7 @@ export default function Answers() {
         <ul className="answers-list">
           <li>
             <AnswerCard
-              title={"5 примеров понравившихся публикаций игровых студий"}
+              title={<>5 примеров понравившихся публикаций игровых&nbsp;студий</>}
             >
               <table className="answer-container table table_type_top-news">
                 <thead className="table__heading">
@@ -49,7 +49,7 @@ export default function Answers() {
                     >
                       <a
                         href="https://www.satisfactorygame.com/updates/update-5"
-                        className="link answer-container__link"
+                        className="link answer-card__link"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -98,7 +98,7 @@ export default function Answers() {
                     >
                       <a
                         href="https://mundfish.com/ru/"
-                        className="link answer-container__link"
+                        className="link answer-card__link"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -140,7 +140,7 @@ export default function Answers() {
                     >
                       <a
                         href="https://www.cyberpunk.net/ru/news/42209/patch-1-52"
-                        className="link answer-container__link"
+                        className="link answer-card__link"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -166,7 +166,7 @@ export default function Answers() {
                             href="https://www.cyberpunk.net/ru/news/46429/patch-1-61"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="link answer-container__link"
+                            className="link answer-card__link"
                           >
                             патче 1.61
                           </a>{" "}
@@ -191,7 +191,7 @@ export default function Answers() {
                     >
                       <a
                         href="https://www.ea.com/games/battlefield/battlefield-2042/news/battlefield-2042-update-notes-3-1-0?isLocalized=true"
-                        className="link answer-container__link"
+                        className="link answer-card__link"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -231,7 +231,7 @@ export default function Answers() {
                     >
                       <a
                         href="https://www.rockstargames.com/ru/newswire/article/9k72kk9k229481/benefit-from-bonuses-on-acid-lab-sell-and-resupply-missions"
-                        className="link answer-container__link"
+                        className="link answer-card__link"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -267,7 +267,31 @@ export default function Answers() {
             </AnswerCard>
           </li>
           <li>
-            <AnswerCard title={"Сравнение 2х статей"}>
+            <AnswerCard
+              title={
+                <>
+                  Сравнение{" "}
+                  <a
+                    href="https://korabli.su/ru/news/game-updates/update-0910-american-battleships/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link answer-card__link"
+                  >
+                    старой
+                  </a>{" "}
+                  и&nbsp;
+                  <a
+                    href="ps://korabli.su/ru/news/game-updates/update-01111-new-year/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link answer-card__link"
+                  >
+                    новой
+                  </a>{" "}
+                  статьи
+                </>
+              }
+            >
               <div className="answer-container answer-container_contain_text">
                 {windowWidth <= 1100 && (
                   <div className="content-button-wrapper">
@@ -336,15 +360,7 @@ export default function Answers() {
                 {(selectedContent === "improvements" || windowWidth > 1100) && (
                   <div className="answer-card__content">
                     <h3 className="answer-card__subtitle">
-                      Что бы я улучшил или изменил в новом{" "}
-                      <a
-                        href="https://korabli.su/ru/news/game-updates/update-01111-new-year/#new-year-celebrations"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link answer-container__link"
-                      >
-                        патч-ноуте
-                      </a>
+                      Что бы я улучшил или изменил в новом патч-ноуте
                     </h3>
                     <p className="answer-card__paragraph">
                       При загрузке страницы первый блок "Празднование Нового
@@ -394,7 +410,21 @@ export default function Answers() {
             </AnswerCard>
           </li>
           <li>
-            <AnswerCard title="Анализ страницы  «Об&nbsp;игре»">
+            <AnswerCard
+              title={
+                <>
+                  Анализ страницы{" "}
+                  <a
+                    href="https://korabli.su/ru/content/game/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link answer-card__link"
+                  >
+                    «Об&nbsp;игре»
+                  </a>
+                </>
+              }
+            >
               <div className="answer-container answer-container_contain_text">
                 <div className="answer-card__content">
                   <h3 className="answer-card__subtitle">
