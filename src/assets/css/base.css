@@ -1,0 +1,39 @@
+body {
+  background-color: #4b5761;
+  font-family: "Inter", "Arial", sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 5px 1px red;
+}
+.page {
+  margin: 0 auto;
+  min-width: 400px;
+  max-width: 1920px;
+}
+.link {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  color: white;
+}
+.link:hover,
+.button:hover {
+  opacity: 0.7;
+}
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    min-height: -webkit-fill-available;
+  }
+}

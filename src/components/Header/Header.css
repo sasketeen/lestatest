@@ -1,0 +1,36 @@
+.header{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 60px;
+  height: 60px;
+}
+.header__navigation {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.header__navlink {
+  font-size: 20px;
+  line-height: 110%;
+  color:rgba(212, 255, 0, 0.994);;
+  text-decoration: none;
+}
+.header__navlink_active, .header__navlink_active:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1023px){
+  .header__logo {
+    width: calc(40px + 20 * ((100vw - 400px)/(1024 - 400)));
+    height: calc(40px + 20 * ((100vw - 400px)/(1024 - 400)));
+  }
+}
+@media screen and (max-width: 399px){
+  .header__logo {
+    width: 40px;
+    height: 40px;
+  }
+}

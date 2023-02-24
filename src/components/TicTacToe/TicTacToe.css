@@ -1,0 +1,32 @@
+.game-table {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 150px));
+  box-sizing: border-box;
+  outline: 2px solid rgba(212, 255, 0, 0.994);
+}
+
+.game-table__cell {
+  box-sizing: border-box;
+  outline: 1px solid rgba(212, 255, 0, 0.994);
+  position: relative;
+  padding-top: 100%;
+  /* aspect-ratio: 1 / 1; */
+}
+.game-table__cell_type_k {
+  background: url(@/images/k.svg) center/contain;
+}
+.game-table__cell_type_n {
+  background: url(@/images/n.svg) center/contain;
+}
+.game-table__cell_type_win {
+  background-color: rgba(0, 255, 42, 0.624);
+}
+.game-table__cell:hover {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.63);
+}
+.button_type_resetGame {
+  display: block;
+  font-size: 22px;
+  line-height: 118%;
+  margin:  30px auto 0;
+}
