@@ -25,7 +25,9 @@ export default function Answers() {
         <ul className="answers-list">
           <li>
             <AnswerCard
-              title={<>5 примеров понравившихся публикаций игровых&nbsp;студий</>}
+              title={
+                <>5 примеров понравившихся публикаций игровых&nbsp;студий</>
+              }
             >
               <table className="answer-container table table_type_top-news">
                 <thead className="table__heading">
@@ -281,7 +283,7 @@ export default function Answers() {
                   </a>{" "}
                   и&nbsp;
                   <a
-                    href="ps://korabli.su/ru/news/game-updates/update-01111-new-year/"
+                    href="https://korabli.su/ru/news/game-updates/update-01111-new-year/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="link answer-card__link"
